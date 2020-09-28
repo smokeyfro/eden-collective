@@ -1,5 +1,5 @@
 ---
-label: Theme configuration
+label: Site Settings
 hide_body: true
 fields:
 - type: text
