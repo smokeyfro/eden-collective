@@ -9,3 +9,4 @@ fields:
   label: Title
 pages:
 - pages/about.md
+- pages/join.md
