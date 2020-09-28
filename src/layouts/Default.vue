@@ -20,7 +20,7 @@ export default {
 
 <style>
 .container {
-    @apply max-w-screen-xl mx-auto
+    @apply max-w-screen-xl mx-auto;
 }
 
 .title {

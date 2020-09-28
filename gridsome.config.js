@@ -9,7 +9,8 @@ module.exports = {
   siteDescription: "Fostering Greater Community Cooperation",
   templates: {
     StaticPage: '/:title',
-    JournalPost: '/news/:title'
+    JournalPost: '/news/:title',
+    CommunityEvent: '/news/:title'
   },
   plugins: [
     {
@@ -20,6 +21,18 @@ module.exports = {
       options: {
         path: "pages/**/*.md",
         typeName: "StaticPage",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "events/**/*.md",
+        typeName: "CommunityEvent",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
