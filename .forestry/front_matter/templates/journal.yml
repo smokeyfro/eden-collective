@@ -27,12 +27,11 @@ fields:
   name: author
   config:
     source:
-      type: simple
+      type: pages
       section: authors
       file: data/authors/nichlas-w-andersen.json
     required: true
-    options:
-    - Nichlas W. Andersen
+    options: []
   label: Author
   default: Nichlas W. Andersen
 pages:

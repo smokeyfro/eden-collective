@@ -5,13 +5,6 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: authors
-  label: Authors
-  create: documents
-  match: "**/*.md"
-  templates:
-  - author
-- type: directory
   path: pages
   label: Pages
   create: documents
@@ -25,6 +18,13 @@ sections:
   match: "**/*.md"
   templates:
   - journal
+- type: directory
+  path: authors
+  label: Authors
+  create: documents
+  match: "**/*.md"
+  templates:
+  - author
 - type: document
   path: data/theme.json
   label: Global

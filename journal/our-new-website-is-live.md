@@ -1,8 +1,10 @@
 ---
 date: 2020-09-01
 title: Our website is officially live
-author: Chris Rault
-excerpt: Now there is a single place where you can refer new members too, where we'll share updates on the projects progress, keep track of upcoming meets and more.
+author: authors/chris-rault.md
+excerpt: Now there is a single place where you can refer new members too, where we'll
+  share updates on the projects progress, keep track of upcoming meets and more.
+
 ---
 ![](/uploads/markus-spiske-516263-unsplash.jpg)
 
