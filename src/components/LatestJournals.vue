@@ -1,8 +1,6 @@
 <template>
 <div class="">
-    <h2 class="text-4xl font-bold mt-10 mb-5 leading-8">Recent news
-        <span class="block text-2xl text-gray-700">From the Collective</span>
-    </h2>
+    <h2 class="title mt-10">Recent News</h2>
     <div class="latest-journals">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
             <div class="bg-gray-900 p-6 rounded-md shadow-md flex flex-col justify-between" v-for="item in journals" :key="item.node.id">

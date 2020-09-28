@@ -1,8 +1,8 @@
 <template>
 <Layout>
-    <div class="prose lg:prose-xl">
-        <h1 v-html="$page.post.title" />
-        <div v-html="$page.post.content" class="content" />
+    <div class="page">
+        <h1 class="title" v-html="$page.post.title" />
+        <div v-html="$page.post.content" class="prose lg:prose-xl" />
     </div>
 </Layout>
 </template>

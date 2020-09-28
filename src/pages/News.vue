@@ -2,9 +2,9 @@
 <Layout>
 
     <div class="">
-        <div class="prose lg:prose-xl mb-10">
-            <h1 class="journal-header">
-                Recent News
+        <div class="mb-10">
+            <h1 class="title">
+                News
             </h1>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full mr-0">

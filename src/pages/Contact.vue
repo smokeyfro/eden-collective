@@ -1,11 +1,11 @@
 <template>
 <Layout>
-    <div class="prose lg:prose-xl">
+    <div class="contact">
 
-        <h1>Contact us</h1>
-        <p>Want to get involved? Fill out the form and we'll get back to you asap.</p>
+        <h1 class="title">Contact</h1>
+        <p class="excerpt">Want to get involved? Fill out the form and we'll get back to you asap.</p>
 
-        <form class="mt-10" name="contact">
+        <form class="mt-10 prose lg:prose-xl" name="contact">
 
             <div class="flex justify-between space-x-6">
                 <div class="w-1/3">
@@ -40,14 +40,6 @@ export default {}
 </script>
 
 <style scoped>
-h1 {
-    @apply mt-24 mb-0
-}
-
-h1+p {
-    @apply mt-3;
-}
-
 input,
 textarea {
     @apply bg-gray-100 block w-full shadow-inner mb-3 px-3 py-2 rounded-md
