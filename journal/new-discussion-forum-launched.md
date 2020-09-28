@@ -1,7 +1,7 @@
 ---
 date: 2019-06-07
 title: Community discussion forum launched
-author: Chris Rault
+author: authors/chris-rault.md
 excerpt: While whatsapp groups are great for general chatting, they are not great
   with staying on topic. That's why we have launched a new, easy to use discussion
   forum which can be used for long form discussions.
