@@ -35,3 +35,5 @@ fields:
     - Nichlas W. Andersen
   label: Author
   default: Nichlas W. Andersen
+pages:
+- journal/preparing-for-the-coming-food-shortage.md
