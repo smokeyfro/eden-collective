@@ -1,36 +1,39 @@
 <template>
 <Layout>
-    <div class="journal prose lg:prose-xl">
+    <div class="event">
         <div class="journal-header">
-            <h1 v-html="$page.post.title" class="journal-title" />
+            <h1 v-html="$page.post.title" class="title" />
+            <p class="excerpt mb-10">{{ $page.post.excerpt }}</p>
             <div class="journal-meta">
-                <div class="journal-author">
-                    <span class="label">Author</span>
-                    <span class="author-name" v-text="$page.post.author" />
+                <div class="w-1/4">
+                    <strong class="label block">Date</strong>
+                    <div v-text="$page.post.date" /> ({{$page.post.start}} - {{$page.post.end}})
                 </div>
-                <div class="journal-date">
-                    <span class="label">Date</span>
-                    <div v-text="$page.post.date" />
-                </div>
-                <div class="journal-time">
-                    <span class="label">Time</span>
-                    <span>{{ $page.post.timeToRead }} min read</span>
+                <div class="w-1/4">
+                    <strong class="label block">Location</strong>
+                    <span>{{ $page.post.location }}</span> (<a :href="$page.post.map_link">Directions</a>)
                 </div>
             </div>
         </div>
-        <JournalContent :content="$page.post.content" />
+        <div v-if="$page.post.content" class="prose lg:prose-xl">
+            {{ $page.post.content }}
+        </div>
     </div>
 </Layout>
 </template>
 
 <page-query>
-query JournalPost ($path: String!) {
-  post: journalPost (path: $path) {
+query CommunityEvent ($path: String!) {
+  post: communityEvent (path: $path) {
     title
     author
     date (format: "D MMM YYYY")
-    timeToRead
+    excerpt
     content
+    start
+    end
+    map_link
+    location
   }
 }
 </page-query>

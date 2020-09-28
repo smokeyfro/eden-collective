@@ -10,7 +10,7 @@ module.exports = {
   templates: {
     StaticPage: '/:title',
     JournalPost: '/news/:title',
-    CommunityEvent: '/news/:title'
+    CommunityEvent: '/events/:title'
   },
   plugins: [
     {
