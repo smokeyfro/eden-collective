@@ -1,11 +1,14 @@
 <template>
-<div class="">
-    <h2 class="text-4xl font-bold mt-10 mb-5 leading-8">Recent news
-        <span class="block text-2xl text-gray-700">From the Collective</span>
-    </h2>
-    <div class="latest-journals">
+<Layout>
+
+    <div class="">
+        <div class="prose lg:prose-xl mb-10">
+            <h1 class="journal-header">
+                News from the Collective
+            </h1>
+        </div>
         <div class="flex justify-start items-start space-x-6 w-full mr-0">
-            <div class="bg-gray-900 p-6 rounded-md shadow-md" v-for="item in journals" :key="item.node.id">
+            <div class="bg-gray-900 p-6 w-1/2 rounded-md shadow-md" v-for="item in $page.posts.edges" :key="item.node.id">
                 <h3 class="text-3xl text-white leading-9 font-black">{{ item.node.title }}</h3>
                 <div class="text-sm mt-2 text-gray-600">
                     <span>{{ item.node.date }}</span> &middot;
@@ -21,26 +24,32 @@
             </div>
         </div>
     </div>
-</div>
+
+</Layout>
 </template>
 
-<script>
-export default {
-    props: {
-        journals: {
-            type: Array,
-            required: true
-        }
+<page-query>
+query Journal {
+	posts: allJournalPost {
+    edges {
+      node {
+        id
+        path
+        title
+        date (format: "D MMM YYYY")
+        author
+        excerpt
+        timeToRead
+      }
     }
+  }
 }
+</page-query>
+
+<script>
+export default {}
 </script>
 
 <style scoped>
-.meta {
-    @apply text-gray-600
-}
 
-.excerpt {
-    @apply mr-3
-}
 </style>

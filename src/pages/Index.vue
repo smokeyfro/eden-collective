@@ -1,8 +1,6 @@
 <template>
 <Layout>
-    <div class="container">
-        <Hero />
-    </div>
+    <Hero />
     <LatestJournals :journals="$page.journals.edges" />
 </Layout>
 </template>
@@ -16,7 +14,7 @@ query Posts {
         path
         title
         excerpt
-        date (format: "DD MMMM YYYY")
+        date (format: "D MMM YYYY")
         timeToRead
         author
       }

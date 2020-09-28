@@ -1,28 +1,30 @@
 <template>
 <Layout>
-    <div class="container">
+    <div class="prose lg:prose-xl">
 
-        <div class="contact-header">
-            <h1 class="contact-title">Contact us</h1>
-            <p>Want to get involved? Fill out the form below and we will get back to you as soon as possible.</p>
-        </div>
+        <h1>Contact us</h1>
+        <p>Want to get involved? Fill out the form and we'll get back to you asap.</p>
 
-        <form class="contact-form" name="contact">
+        <form class="mt-10" name="contact">
 
-            <div class="sender-info">
-                <div>
-                    <label for="name" class="label">Your name</label>
+            <div class="flex justify-between space-x-6">
+                <div class="w-1/3">
+                    <label for="name" class="label">Name</label>
                     <input type="text" name="name" />
                 </div>
-                <div>
-                    <label for="email" class="label">Your email</label>
+                <div class="w-1/3">
+                    <label for="email" class="label">Email</label>
                     <input type="email" name="email" />
+                </div>
+                <div class="w-1/3">
+                    <label for="phone" class="label">Phone</label>
+                    <input type="phone" name="phone" />
                 </div>
             </div>
 
             <div class="message">
                 <label for="message" class="label">Message</label>
-                <textarea name="message"></textarea>
+                <textarea name="message" class="h-32"></textarea>
             </div>
 
             <button class="button">Submit form</button>
@@ -38,73 +40,29 @@ export default {}
 </script>
 
 <style scoped>
-.contact-header {
-    padding: 2rem 0 4rem 0;
+h1 {
+    @apply mt-24 mb-0
 }
 
-.contact-title {
-    font-size: 4rem;
-    margin: 0 0 4rem 0;
-    padding: 0;
-}
-
-.sender-info {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-
-.sender-info>div {
-    flex: 1;
-    margin-right: 4rem;
-}
-
-.sender-info>div:last-of-type {
-    margin: 0;
-}
-
-input:focus,
-textarea:focus {
-    border-color: var(--color-contrast-1);
+h1+p {
+    @apply mt-3;
 }
 
 input,
 textarea {
-    background: transparent;
-    border: 1px solid var(--color-base-1);
-    outline: none;
-    border-radius: 0.3rem;
-    padding: 0.8rem 1rem;
-    color: inherit;
-    font-size: 1rem;
-    width: 100%;
+    @apply bg-gray-100 block w-full shadow-inner mb-3 px-3 py-2 rounded-md
 }
 
-textarea {
-    resize: none;
-    height: 140px;
+input:focus,
+textarea:focus {
+    @apply border-red-900;
+}
+
+label {
+    @apply font-bold mb-2 block;
 }
 
 .button {
-    color: var(--color-base);
-    background: var(--color-contrast);
-    outline: none;
-    border: 0;
-    font-size: 0.8rem;
-    padding: 0.8rem 1.6rem;
-    border-radius: 0.3rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    transition: opacity 0.25s ease;
-    font-size: 500;
-    letter-spacing: 0.035em;
-}
-
-.button:hover {
-    opacity: 0.6;
-}
-
-.button:focus {
-    border: 1px solid var(--color-base-1);
+    @apply bg-gray-900 text-white font-bold mt-5 px-6 py-2 rounded-md
 }
 </style>

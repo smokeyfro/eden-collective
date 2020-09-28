@@ -1,5 +1,5 @@
 <template>
-<div class="hero">
+<div class="hero leading-sm">
     <h1 class="hero-title" v-html="settings.hero_title" />
     <h2 class="hero-subtitle" v-html="settings.hero_subtitle" />
 </div>
@@ -17,42 +17,27 @@ export default {
 
 <style>
 .hero {
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 4rem 0 8rem 0;
-    background: url(../../static/bg.jpg) no-repeat;
-    background-size: cover;
-    position: relative;
+    @apply rounded-md overflow-hidden text-center w-full my-0 mx-auto px-10 py-24 bg-cover relative;
+    background-image: url(../../static/bg.jpg);
+    background-repeat: no-repeat;
 }
 
 .hero:after {
+    @apply h-full w-full block bg-gray-900 bg-opacity-75 absolute top-0 left-0 z-0;
     content: '';
-    height: 100%;
-    width: 100%;
-    display: block;
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
 }
 
 .hero h1,
 .hero h2 {
-    max-width: 570px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    color: #fff;
+    @apply max-w-lg mx-auto relative z-10 text-white;
 }
 
 .hero .hero-title {
-    font-size: 3rem;
+    @apply leading-tight;
+    font-size: 3.2rem;
     font-weight: 700;
     padding: 0;
-    margin: 1em auto 1rem auto;
+    margin: 0 auto 1rem auto;
 }
 
 .hero-title p,

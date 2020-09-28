@@ -1,9 +1,10 @@
 <template>
-    <footer class="footer">
-        <div class="container">
-            <span v-html="settings.footer" />
-        </div>
-    </footer>
+<footer class="">
+    <div class="text-base text-gray-600 my-10 flex justify-between">
+        <span v-html="settings.footer" />
+        <span>Site by <a href="https://smokeyfro.com" target="_blank" title="This site was created by SmokeyFro" class="text-gray-900 font-bold">SmokeyFro</a></span>
+    </div>
+</footer>
 </template>
 
 <script>
@@ -17,8 +18,5 @@ export default {
 </script>
 
 <style scoped>
-.footer {
-    font-size: 0.8rem;
-    padding: 6rem 0;
-}
+
 </style>

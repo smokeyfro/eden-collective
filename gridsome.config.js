@@ -7,7 +7,14 @@ module.exports = {
   host: "0.0.0.0",
   titleTemplate: "%s - Eden Collective",
   siteDescription: "Fostering Greater Community Cooperation",
+  templates: {
+    StaticPage: '/:title',
+    JournalPost: '/news/:title'
+  },
   plugins: [
+    {
+      use: "gridsome-plugin-tailwindcss",
+    },
     {
       use: "@gridsome/source-filesystem",
       options: {
@@ -32,10 +39,5 @@ module.exports = {
         }
       }
     }
-  ],
-  transformers: {
-    remark: {
-      plugins: ["@gridsome/remark-prismjs"]
-    }
-  }
+  ]
 };
