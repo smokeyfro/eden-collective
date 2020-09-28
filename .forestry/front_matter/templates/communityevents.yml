@@ -1,0 +1,47 @@
+---
+label: CommunityEvents
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- name: start
+  type: text
+  config:
+    required: false
+  label: start
+- name: end
+  type: text
+  config:
+    required: false
+  label: end
+- type: text
+  name: author
+  label: author
+- type: textarea
+  name: excerpt
+  label: excerpt
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+- name: location
+  type: text
+  config:
+    required: false
+  label: location
+- name: map_link
+  type: text
+  config:
+    required: false
+  label: map link
+pages:
+- events/hoekwil-seed-swap.md

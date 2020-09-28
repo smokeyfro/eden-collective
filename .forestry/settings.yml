@@ -12,6 +12,13 @@ sections:
   templates:
   - page
 - type: directory
+  path: events
+  label: Events
+  create: documents
+  match: "**/*.md"
+  templates:
+  - communityevents
+- type: directory
   path: journal
   label: Journal
   create: documents
