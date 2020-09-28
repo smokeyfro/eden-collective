@@ -2,17 +2,17 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Portfolio",
-  siteUrl: `https://www.itsnwa.com`,
+  siteName: "Eden Colllective",
+  siteUrl: `https://edencollective.org.za`,
   host: "0.0.0.0",
-  titleTemplate: "%s - NWA",
-  siteDescription: "Creative technologist",
+  titleTemplate: "%s - Eden Collective",
+  siteDescription: "Fostering Greater Community Cooperation",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "pages/**/*.md",
-        typeName: "Page",
+        typeName: "StaticPage",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",

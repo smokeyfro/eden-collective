@@ -18,7 +18,7 @@
 
 <page-query>
 query Page ($path: String!) {
-  post: Page (path: $path) {
+  post: staticPage (path: $path) {
     title
     content
   }
