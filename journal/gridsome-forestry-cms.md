@@ -1,9 +1,10 @@
 ---
 date: 2019-06-07
-title: Gridsome with Forestry CMS
+title: New community discussion forum launched
 author: Nichlas W. Andersen
-excerpt: Get up and running with Forestry CMS, a git-backed headless CMS with a slick
-  editing interface.
+excerpt: While whatsapp groups are great for general chatting, they are not great
+  with staying on topic. That's why we have launched a new, easy to use discussion
+  forum which can be used for long form discussions.
 
 ---
 #### Use Forestry as a CMS for Gridsome
