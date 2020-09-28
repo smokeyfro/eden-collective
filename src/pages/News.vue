@@ -7,8 +7,8 @@
                 News from the Collective
             </h1>
         </div>
-        <div class="flex justify-start items-start space-x-6 w-full mr-0">
-            <div class="bg-gray-900 p-6 w-1/2 rounded-md shadow-md" v-for="item in $page.posts.edges" :key="item.node.id">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full mr-0">
+            <div class="bg-gray-900 p-6 rounded-md shadow-md" v-for="item in $page.posts.edges" :key="item.node.id">
                 <h3 class="text-3xl text-white leading-9 font-black">{{ item.node.title }}</h3>
                 <div class="text-sm mt-2 text-gray-600">
                     <span>{{ item.node.date }}</span> &middot;
