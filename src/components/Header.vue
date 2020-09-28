@@ -8,11 +8,7 @@
             <g-link class="nav__link" to="/about">About</g-link>
             <g-link class="nav__link" to="/news">News</g-link>
             <g-link class="nav__link" to="/contact">Contact</g-link>
-            <span class="divider">&nbsp;</span>
-            <a class="flex items-center justify-end" href="https://discuss.edencollective.org.za/" target="_blank">
-                <span class="mr-2">Discuss</span>
-                <g-image src="../../static/external.svg" width="12" />
-            </a>
+            <a class="nav__link" href="https://discuss.edencollective.org.za/">Discuss</a>
         </nav>
     </div>
 </header>

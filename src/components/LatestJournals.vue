@@ -4,17 +4,18 @@
         <span class="block text-2xl text-gray-700">From the Collective</span>
     </h2>
     <div class="latest-journals">
-        <div class="flex justify-start items-start space-x-6 w-full mr-0">
-            <div class="bg-gray-900 p-6 rounded-md shadow-md" v-for="item in journals" :key="item.node.id">
-                <h3 class="text-3xl text-white leading-9 font-black">{{ item.node.title }}</h3>
-                <div class="text-sm mt-2 text-gray-600">
-                    <span>{{ item.node.date }}</span> &middot;
-                    <span>{{ item.node.author }} </span> &middot;
-                    <span>{{ item.node.timeToRead }} min read</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
+            <div class="bg-gray-900 p-6 rounded-md shadow-md flex flex-col justify-between" v-for="item in journals" :key="item.node.id">
+                <div>
+                    <h3 class="text-3xl text-white leading-9 font-black">{{ item.node.title }}</h3>
+                    <div class="text-sm mt-2 text-gray-600">
+                        <span>{{ item.node.date }}</span> &middot;
+                        <span>{{ item.node.timeToRead }} min read</span>
+                    </div>
+                    <p class="mt-3 text-lg text-gray-500">
+                        {{ item.node.excerpt }}
+                    </p>
                 </div>
-                <p class="mt-3 text-lg text-gray-500">
-                    {{ item.node.excerpt }}
-                </p>
                 <g-link :to="item.node.path" class="block mt-5 font-bold text-white">
                     Continue Reading &rightarrow;
                 </g-link>

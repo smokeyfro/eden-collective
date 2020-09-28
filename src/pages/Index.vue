@@ -16,7 +16,6 @@ query Posts {
         excerpt
         date (format: "D MMM YYYY")
         timeToRead
-        author
       }
     }
   }
