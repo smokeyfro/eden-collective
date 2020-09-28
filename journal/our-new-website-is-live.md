@@ -1,10 +1,8 @@
 ---
-date: 2019-05-17
+date: 2020-09-01
 title: Our new website is live
-author: Nichlas W. Andersen
-excerpt: Now there is a single place where you can refer new members too, where we'll
-  share updates on the projects progress, keep track of upcoming meets and more.
-
+author: Chris Rault
+excerpt: Now there is a single place where you can refer new members too, where we'll share updates on the projects progress, keep track of upcoming meets and more.
 ---
 ![](/uploads/markus-spiske-516263-unsplash.jpg)
 

@@ -10,6 +10,10 @@
             <g-link class="nav__link" to="/about">About</g-link>
             <g-link class="nav__link" to="/journal">News</g-link>
             <g-link class="nav__link" to="/contact">Contact</g-link>
+            <span class="divider">&nbsp;</span>
+            <a class="nav__link" href="https://discuss.edencollective.org.za/" target="_blank">Discuss
+                <g-image src="../../static/external.svg" width="10" />
+            </a>
         </nav>
     </div>
 </header>
@@ -38,6 +42,12 @@ export default {
     height: 100%;
 }
 
+.divider {
+    margin-right: 2em;
+    border-left: 1px solid #ccc;
+    display: inline-block;
+}
+
 .home-link {
     text-decoration: none;
 }
@@ -54,7 +64,7 @@ export default {
     text-transform: uppercase;
 }
 
-.nav>* {
+.nav>a {
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
@@ -66,7 +76,7 @@ export default {
     transition: border 0.15s;
 }
 
-.nav>*:last-of-type {
+.nav>a:last-of-type {
     margin: 0;
 }
 

@@ -16,6 +16,9 @@ query Posts {
         path
         title
         excerpt
+        date (format: "DD MMMM YYYY")
+        timeToRead
+        author
       }
     }
   }

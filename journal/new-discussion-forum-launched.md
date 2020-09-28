@@ -1,7 +1,7 @@
 ---
 date: 2019-06-07
 title: New discussion forum launched
-author: Nichlas W. Andersen
+author: Chris Rault
 excerpt: While whatsapp groups are great for general chatting, they are not great
   with staying on topic. That's why we have launched a new, easy to use discussion
   forum which can be used for long form discussions.

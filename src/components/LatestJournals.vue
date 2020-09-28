@@ -7,6 +7,11 @@
         <div class="container flex">
             <div v-for="item in journals" :key="item.node.id">
                 <h3 class="journal-title">{{ item.node.title }}</h3>
+                <div class="meta">
+                    <span>{{ item.node.date }}</span> &middot;
+                    <span>{{ item.node.author }} </span> &middot;
+                    <span>{{ item.node.timeToRead }} min read</span>
+                </div>
                 <p class="excerpt">
                     {{ item.node.excerpt }}
                 </p>
@@ -40,8 +45,12 @@ export default {
 }
 
 .journal-title {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: .5em 0;
+}
+
+.meta {
+    color: #555;
 }
 
 .excerpt {

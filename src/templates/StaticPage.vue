@@ -1,17 +1,12 @@
 <template>
 <Layout>
     <div class="project">
-
         <div class="container">
-
             <div class="project-header">
                 <h1 class="project-title" v-html="$page.post.title" />
             </div>
-
             <div v-html="$page.post.content" class="content" />
-
         </div>
-
     </div>
 </Layout>
 </template>
@@ -21,6 +16,7 @@ query Page ($path: String!) {
   post: staticPage (path: $path) {
     title
     content
+    path
   }
 }
 </page-query>
