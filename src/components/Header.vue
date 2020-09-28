@@ -9,7 +9,7 @@
             <g-link class="nav__link" to="/events">Events</g-link>
             <g-link class="nav__link" to="/news">News</g-link>
             <g-link class="nav__link" to="/contact">Contact</g-link>
-            <a class="nav__link" href="https://discuss.edencollective.org.za/">Community</a>
+            <a class="nav__link" href="https://community.edencollective.org.za/">Community</a>
         </nav>
         <g-link class="bg-gray-900 text-white font-bold ml-5 rounded-md px-4 py-2" to="/join">Join the Collective</g-link>
     </div>
