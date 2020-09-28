@@ -11,6 +11,6 @@ tags:
 start: 2pm
 end: 5pm
 location: Woodville Trading Store, 7-Passes Road
-map_link: ''
+map_link: https://goo.gl/maps/qN33tQCajzJYFJs67
 
 ---
