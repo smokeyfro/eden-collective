@@ -8,5 +8,9 @@ tags:
 - seed-swap
 - trade
 - market
+start: 2pm
+end: 5pm
+location: Woodville Trading Store, 7-Passes Road
+map_link: ''
 
 ---
