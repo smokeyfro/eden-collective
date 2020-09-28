@@ -1,7 +1,7 @@
 ---
 date: 2019-06-04
 title: Ways to get involved
-author: Chris Rault
+author: authors/chris-rault.md
 excerpt: So the idea of greater community cooperation sounds good, but you're not
   quite sure where you fit in? This post covers different ways that you can get involved.
 
