@@ -8,11 +8,18 @@ fields:
     required: false
   label: Title
 - name: content
-  type: blocks
-  label: Content
-  template_types: []
+  type: textarea
+  default: ''
   config:
-    min: 
-    max: 
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+- name: slug
+  type: text
+  config:
+    required: false
+  label: Slug
 pages:
 - pages/about.md
