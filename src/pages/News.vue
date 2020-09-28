@@ -3,9 +3,7 @@
 
     <div class="">
         <div class="mb-10">
-            <h1 class="title">
-                News
-            </h1>
+            <h1 class="title">News</h1>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full mr-0">
             <div class="bg-gray-900 p-6 rounded-md shadow-md flex flex-col justify-between" v-for="item in $page.posts.edges" :key="item.node.id">
