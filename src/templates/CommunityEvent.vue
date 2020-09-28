@@ -13,6 +13,12 @@
                     <strong class="label block">Location</strong>
                     <span>{{ $page.post.location }}</span> (<a :href="$page.post.map_link">Directions</a>)
                 </div>
+                <div class="w-1/4">
+                    <strong class="label block">Tags</strong>
+                    <span v-for="(tag, index) in $page.post.tags" id="index">
+                        {{ tag }}
+                    </span>
+                </div>
             </div>
         </div>
         <div v-if="$page.post.content" class="prose lg:prose-xl">
@@ -34,6 +40,7 @@ query CommunityEvent ($path: String!) {
     end
     map_link
     location
+    tags
   }
 }
 </page-query>
