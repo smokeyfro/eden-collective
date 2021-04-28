@@ -24,7 +24,7 @@
         data-host="https://sfcomments.vercel.app"
         data-app-id="90d36a11-e3d2-4111-9b40-27f84ec8ba31"
         :data-page-id="$page.post.id"
-        :data-page-url="`https://edencollective.org.za/${$page.post.path})`"
+        :data-page-url="`https://edencollective.org.za/${$page.post.path}`"
         :data-page-title="$page.post.title"
       ></div>
     </div>
