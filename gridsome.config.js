@@ -8,7 +8,7 @@ module.exports = {
   titleTemplate: "%s - Eden Collective",
   siteDescription: "Fostering Greater Community Cooperation",
   templates: {
-    StaticPage: '/:title',
+    AboutPage: '/about/:title',
     JournalPost: '/news/:title',
     CommunityEvent: '/events/:title'
   },
@@ -19,8 +19,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "pages/**/*.md",
-        typeName: "StaticPage",
+        path: "pages/about/*.md",
+        typeName: "AboutPage",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",

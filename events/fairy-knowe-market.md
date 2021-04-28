@@ -1,6 +1,6 @@
 ---
-date: 2021-06-09
-title: Hoekwil Seed Swap
+date: 2021-05-01
+title: Fairy Knowe Market
 author: Chris Rault
 excerpt: Join us for Octobers Seed Swap at the Woodville Trading Store.
 image: "/uploads/hoekwil-seed-swap-9-october-2020.jpeg"

@@ -1,57 +1,25 @@
 <template>
-<div class="hero leading-sm">
-    <h1 class="hero-title" v-html="settings.hero_title" />
-    <h2 class="hero-subtitle" v-html="settings.hero_subtitle" />
-</div>
+  <div class="hero leading-sm">
+    <div class="w-2/3 bg-black bg-opacity-75 p-10 rounded-md">
+      <h1 class="hero-title" v-html="settings.hero_title" />
+      <h2 class="hero-subtitle rounded-md" v-html="settings.hero_subtitle" />
+      <p>
+        <g-link
+          to="/about"
+          class="text-white font-bold text-xl ml-3 mt-4 px-5 border border-gray-800 rounded-md inline-block p-2 bg-black"
+          >Learn More</g-link
+        >
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            settings: require("../../data/theme.json")
-        }
-    }
-}
+  data() {
+    return {
+      settings: require("../../data/theme.json"),
+    };
+  },
+};
 </script>
-
-<style>
-.hero {
-    @apply rounded-md overflow-hidden text-center w-full my-0 mx-auto px-10 py-24 bg-cover relative;
-    background-image: url(../../static/bg.jpg);
-    background-repeat: no-repeat;
-}
-
-.hero:after {
-    @apply h-full w-full block bg-gray-900 bg-opacity-75 absolute top-0 left-0 z-0;
-    content: '';
-}
-
-.hero h1,
-.hero h2 {
-    @apply max-w-lg mx-auto relative z-10 text-white;
-}
-
-.hero .hero-title {
-    @apply leading-tight;
-    font-size: 3.2rem;
-    font-weight: 700;
-    padding: 0;
-    margin: 0 auto 1rem auto;
-}
-
-.hero-title p,
-.hero-subtitle p {
-    margin: 0;
-    padding: 0;
-}
-
-.hero-subtitle {
-    font-size: 1.4em;
-    font-weight: 400;
-    line-height: 1.68;
-    padding: 0;
-    margin: 0;
-    opacity: 0.6;
-}
-</style>

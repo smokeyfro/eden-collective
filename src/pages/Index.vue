@@ -1,8 +1,8 @@
 <template>
-<Layout>
+  <Layout>
     <Hero />
     <LatestJournals :journals="$page.journals.edges" />
-</Layout>
+  </Layout>
 </template>
 
 <page-query>
@@ -23,13 +23,19 @@ query Posts {
 </page-query>
 
 <script>
-import Hero from "@/components/Hero"
-import LatestJournals from "@/components/LatestJournals"
+import Hero from "@/components/Hero";
+import LatestJournals from "@/components/LatestJournals";
 
 export default {
-    components: {
-        Hero,
-        LatestJournals
-    }
-}
+  components: {
+    Hero,
+    LatestJournals,
+  },
+};
 </script>
+
+<style>
+.hero-title {
+  @apply max-w-xl;
+}
+</style>
