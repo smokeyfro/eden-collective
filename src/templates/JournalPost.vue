@@ -34,6 +34,7 @@
 <page-query>
 query JournalPost ($path: String!) {
   post: journalPost (path: $path) {
+    id
     title
     author
     date (format: "D MMM YYYY")
