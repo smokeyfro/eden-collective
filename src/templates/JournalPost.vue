@@ -22,7 +22,7 @@
       <div
         id="cusdis_thread"
         data-host="https://sfcomments.vercel.app"
-        data-app-id="670bd0b4-0b48-4f4e-ae75-73db184557e9"
+        data-app-id="90d36a11-e3d2-4111-9b40-27f84ec8ba31"
         :data-page-id="$page.post.id"
         :data-page-url="this.route"
         :data-page-title="$page.post.title"
