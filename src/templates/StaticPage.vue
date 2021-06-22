@@ -1,18 +1,18 @@
 <template>
-<Layout>
+  <Layout>
     <div class="page flex justify-start items-start relative container">
-        <div>
-            <h1 class="title" v-html="$page.post.title" />
-            <div v-html="$page.post.content" class="prose lg:prose-xl" />
-        </div>
-        <AboutNav v-if="$page.post.title === 'About'" />
+      <div>
+        <h1 class="title" v-html="$page.post.title" />
+        <div v-html="$page.post.content" class="prose lg:prose-xl" />
+      </div>
+      <AboutNav v-if="$page.post.title === 'About'" />
     </div>
-</Layout>
+  </Layout>
 </template>
 
 <page-query>
 query Page ($path: String!) {
-  post: staticPage (path: $path) {
+  post: page (path: $path) {
     title
     content
     path
@@ -21,19 +21,17 @@ query Page ($path: String!) {
 </page-query>
 
 <script>
-import AboutNav from '@/components/AboutNav'
+import AboutNav from "@/components/AboutNav";
 export default {
-    components: {
-        AboutNav
-    },
-    metaInfo() {
-        return {
-            title: this.$page.post.title
-        }
-    }
-}
+  components: {
+    AboutNav,
+  },
+  metaInfo() {
+    return {
+      title: this.$page.post.title,
+    };
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

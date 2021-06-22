@@ -9,7 +9,7 @@
         />
       </g-link>
       <nav
-        class="nav hidden md:flex items-center justify-end space-x-5 underline text-green-800 text-xl"
+        class="nav hidden md:flex items-center justify-end space-x-5 underline text-black text-xl"
       >
         <g-link class="nav__link" to="/about">About</g-link>
         <g-link class="nav__link" to="/events">Events</g-link>

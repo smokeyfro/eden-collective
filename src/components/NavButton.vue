@@ -6,7 +6,7 @@
     v-if="showNavigation === false"
     @click.prevent="openNavbarModal()"
     aria-label="Open Navigation"
-    class="bg-black text-white font-bold ml-5 rounded-md px-4 py-2"
+    class="block lg:hidden bg-black text-white font-bold ml-5 rounded-md px-4 py-2"
   >
     <svg
       class="w-6 h-6"
