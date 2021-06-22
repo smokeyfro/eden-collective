@@ -8,11 +8,6 @@ fields:
   config:
     required: false
   label: Title
-- name: slug
-  type: text
-  config:
-    required: false
-  label: Slug
 pages:
 - pages/about.md
 - pages/food-security.md
