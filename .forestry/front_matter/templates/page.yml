@@ -13,15 +13,6 @@ fields:
   config:
     required: false
   label: Slug
-- name: content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Content
 pages:
 - pages/about.md
 - pages/food-security.md
