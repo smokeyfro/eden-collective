@@ -44,4 +44,5 @@ fields:
     required: false
   label: map link
 pages:
+- events/garden-roots-seed-swap.md
 - events/hoekwil-seed-swap.md
