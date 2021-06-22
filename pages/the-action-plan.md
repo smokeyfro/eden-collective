@@ -1,5 +1,5 @@
 ---
-title: The Action Plan
+title: Action Plan
 slug: action-plan
 content: Hang tight, content coming soon!
 
