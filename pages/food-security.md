@@ -66,5 +66,6 @@ content: "Fourteen Reasons Why Food Security is Important Food security is impor
   to make. Value added, for instance, could mean fresher or more flavourful rather
   than further processed. (Further processing often decreases nutritional value.)\n\nAdaped
   from http://bcfsn.org/wp-content/uploads/2012/02/14-reasons-why-food-security-is-important.pdf "
+slug: food-security
 
 ---
