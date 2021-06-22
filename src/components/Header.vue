@@ -2,7 +2,11 @@
   <header class="my-10">
     <div class="w-full flex justify-between items-center">
       <g-link :to="{ name: 'home' }" class="home-link">
-        <img src="../../static/logo.svg" :alt="settings.site_name" class="logo w-56" />
+        <img
+          src="../../static/edenhub-logo.png"
+          :alt="settings.site_name"
+          class="logo w-30"
+        />
       </g-link>
       <nav
         class="nav flex items-center justify-end space-x-5 underline text-green-800 text-xl"

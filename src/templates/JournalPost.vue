@@ -19,6 +19,8 @@
         </div>
       </div>
       <JournalContent :content="$page.post.content" />
+      <hr />
+      <h2>Comments</h2>
       <div
         id="cusdis_thread"
         data-host="https://sfcomments.vercel.app"
