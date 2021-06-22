@@ -35,7 +35,7 @@ export default {
   @apply font-bold;
 }
 .hero {
-  @apply rounded-md overflow-hidden w-full my-0 mx-auto bg-cover bg-center relative;
+  @apply overflow-hidden w-full my-0 mx-auto bg-cover bg-center relative;
   background-image: url(../../static/bg.jpg);
   background-repeat: no-repeat;
 }
