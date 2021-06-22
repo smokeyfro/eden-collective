@@ -1,10 +1,8 @@
 <template>
   <Layout>
-    <div class="page flex justify-start items-start relative container">
-      <div>
-        <h1 class="title" v-html="$page.post.title" />
-        <div v-html="$page.post.content" class="prose lg:prose-xl" />
-      </div>
+    <SubHero :title="$page.post.title" />
+    <div class="mx-auto mt-10 page flex justify-center items-start relative container">
+      <div v-html="$page.post.content" class="prose lg:prose-xl" />
       <AboutNav v-if="$page.post.title === 'About'" />
     </div>
   </Layout>
@@ -22,9 +20,12 @@ query Page ($path: String!) {
 
 <script>
 import AboutNav from "@/components/AboutNav";
+import SubHero from "@/components/SubHero";
+
 export default {
   components: {
     AboutNav,
+    SubHero,
   },
   metaInfo() {
     return {
