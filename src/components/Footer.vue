@@ -1,8 +1,9 @@
 <template>
-  <footer class="">
-    <div class="text-base text-gray-600 my-10 mt-24 flex justify-between">
-      <span v-html="settings.footer" />
-      <span
+  <footer class="p-4">
+    <div
+      class="text-center text-base text-gray-600 lg:my-10 mt-24 lg:flex lg:justify-between"
+    >
+      <span class="mt-3 block"
         >Site by
         <a
           href="https://smokeyfro.com"

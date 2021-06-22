@@ -2,10 +2,10 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Eden Colllective",
-  siteUrl: `https://edencollective.org.za`,
+  siteName: "Eden Hub",
+  siteUrl: `https://edenhub.org`,
   host: "0.0.0.0",
-  titleTemplate: "%s - Eden Collective",
+  titleTemplate: "%s - Eden Hub",
   siteDescription: "Fostering Greater Community Cooperation",
   templates: {
     AboutPage: '/about/:title',

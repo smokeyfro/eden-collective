@@ -24,7 +24,7 @@ export default {
 }
 
 .title {
-  @apply text-4xl font-bold bg-gray-200 mb-6 text-gray-900 flex w-auto inline-block px-5 py-1 rounded-md;
+  @apply text-4xl font-bold text-gray-900 flex w-auto inline-block px-5 py-1 rounded-md;
 }
 
 .excerpt {
@@ -35,7 +35,7 @@ export default {
   @apply font-bold;
 }
 .hero {
-  @apply rounded-md overflow-hidden w-full my-0 mx-auto p-20 bg-cover bg-center relative;
+  @apply rounded-md overflow-hidden w-full my-0 mx-auto bg-cover bg-center relative;
   background-image: url(../../static/bg.jpg);
   background-repeat: no-repeat;
 }
@@ -49,11 +49,17 @@ export default {
 .hero h2 {
   @apply inline-block px-3 mx-auto relative z-10 text-white;
 }
-
 .hero .hero-title {
   @apply leading-tight;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .hero .hero-title {
+    @apply leading-tight;
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
 }
 
 .hero-title p,

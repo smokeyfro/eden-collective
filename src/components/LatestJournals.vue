@@ -1,9 +1,9 @@
 <template>
-  <div class="">
-    <h2 class="title mt-20">Recent news from our blog</h2>
+  <div class="py-4 lg:p-0">
+    <h2 class="title lg:mt-20">Recent News</h2>
     <div class="mt-2 latest-journals">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
-        <div class="" v-for="item in journals" :key="item.node.id">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 w-full">
+        <div class="p-5" v-for="item in journals" :key="item.node.id">
           <div>
             <h3 class="text-3xl leading-9 font-black">
               {{ item.node.title }}
