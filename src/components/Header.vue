@@ -20,7 +20,7 @@
       <g-link
         class="bg-green-700 text-white font-bold ml-5 rounded-md px-4 py-2"
         to="/join"
-        >Join the Collective</g-link
+        >Join Now</g-link
       >
     </div>
   </header>
