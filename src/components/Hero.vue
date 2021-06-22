@@ -1,5 +1,5 @@
 <template>
-  <div class="hero leading-sm">
+  <div class="hero lg:p-20 leading-sm">
     <div class="w-full lg:w-2/3 bg-black bg-opacity-75 p-6 lg:p-10 rounded-md">
       <h1 class="hero-title" v-html="settings.hero_title" />
       <h2 class="hero-subtitle rounded-md" v-html="settings.hero_subtitle" />

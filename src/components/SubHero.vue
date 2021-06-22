@@ -1,5 +1,5 @@
 <template>
-  <div class="hero leading-sm">
+  <div class="hero lg:p-20 leading-sm">
     <h1 class="hero-title" v-html="title" />
   </div>
 </template>

@@ -1,5 +1,5 @@
 ---
 title: About
-content: Content coming soon.
-
+slug: about
 ---
+Hang tight, content coming soon.
