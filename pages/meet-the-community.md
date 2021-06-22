@@ -1,8 +1,5 @@
 ---
 title: Meet the Community
-slug: meet-the-community
-content: ''
-
 ---
 Eden Hub is still quite a new initiative and we are actively recruiting members of the community to get involved. We'll update this page as new members come on board.
 

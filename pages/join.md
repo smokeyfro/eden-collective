@@ -1,5 +1,3 @@
 ---
 title: Join
-slug: join
-
 ---

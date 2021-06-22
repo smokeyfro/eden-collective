@@ -1,7 +1,5 @@
 ---
 title: About
-slug: about
-
 ---
 ## Why do we need to get involved?
 
