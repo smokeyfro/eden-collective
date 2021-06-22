@@ -18,5 +18,6 @@ fields:
       format: markdown
   label: Content
 pages:
+- pages/about.md
 - pages/food-security.md
 - pages/join.md
