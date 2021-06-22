@@ -4,7 +4,13 @@
     <div class="mx-auto mt-10 page flex justify-center items-start relative container">
       <div v-html="$page.post.content" class="prose lg:prose-xl" />
       <AboutNav
-        v-if="$page.post.title === ['About', 'Meet the Community', 'Action Plan']"
+        v-if="
+          $page.post.title === 'About' ||
+          $page.post.title === 'Action Plan' ||
+          $page.post.title === 'Meet the Community' ||
+          $page.post.title === 'Join' ||
+          $page.post.title === 'Food Security'
+        "
       />
     </div>
   </Layout>
@@ -15,7 +21,6 @@ query Page ($path: String!) {
   post: staticPage (path: $path) {
     title
     content
-    path
   }
 }
 </page-query>
