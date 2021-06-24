@@ -5,3 +5,15 @@ fields:
 - type: text
   name: title
   label: title
+- name: members
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: 
+      file: 
+      path: 
+  label: Members
