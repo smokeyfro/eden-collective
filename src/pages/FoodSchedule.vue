@@ -4,15 +4,13 @@
       <SubHero title="Food Schedule" />
       <ul class="mt-10 prose lg:prose-xl mx-auto">
         <li v-for="(items, month) in groupByMonth" :key="month">
-          <h2 class="font-bold text-2xl mb-2">{{ month }}</h2>
           <ul class="mb-10">
             <li
               v-for="(item, index) in items"
               :key="index"
               class="flex items-start justify-start"
             >
-              <span v-html="item.date" class="lg:mr-3" />
-              <strong v-html="item.title" />
+              <strong v-html="item" />
             </li>
           </ul>
         </li>
@@ -54,6 +52,7 @@ query FoodSchedule {
         title
         order (format: "MMM")
         createdMonth: order(format: "MMMM")
+        food_items
       }
     }
   }
