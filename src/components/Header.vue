@@ -50,7 +50,6 @@ export default {
   data() {
     return {
       showNavbarModal: false,
-      logo: require("../../static/logo.svg"),
       settings: require("../../data/theme.json"),
     };
   },
