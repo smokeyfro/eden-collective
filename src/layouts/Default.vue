@@ -47,11 +47,11 @@ export default {
 
 .hero h1,
 .hero h2 {
-  @apply inline-block px-3 mx-auto relative z-10 text-white;
+  @apply inline-block mx-auto relative z-10 text-white;
 }
 .hero .hero-title {
   @apply leading-tight;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 @media (min-width: 768px) {
@@ -70,8 +70,8 @@ export default {
 
 .hero-subtitle {
   @apply inline-block mt-5;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 400;
-  line-height: 1.68;
+  line-height: 1.5;
 }
 </style>

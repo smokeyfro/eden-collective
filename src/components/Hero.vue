@@ -6,7 +6,7 @@
       <p>
         <g-link
           to="/about"
-          class="text-black font-bold text-xl ml-3 mt-5 mb-5 px-5 rounded-md inline-block p-2 bg-white"
+          class="text-black font-bold text-xl mt-6 mb-2 px-3 lg:px-5 outline-none rounded-md inline-block p-1 bg-white"
           >Learn More</g-link
         >
       </p>

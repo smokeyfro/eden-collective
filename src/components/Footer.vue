@@ -1,8 +1,6 @@
 <template>
   <footer class="p-4">
-    <div
-      class="text-center text-base text-gray-600 lg:my-10 mt-24 lg:flex lg:justify-between"
-    >
+    <div class="text-base text-gray-600 lg:my-10">
       <span class="mt-3 block"
         >Site by
         <a
