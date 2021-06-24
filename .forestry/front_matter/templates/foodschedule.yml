@@ -17,6 +17,15 @@ fields:
       type: pages
       section: food-items
   label: Food Items
+- name: order
+  type: datetime
+  label: Order
+  description: ''
+  config:
+    required: false
+    date_format: MM
+    time_format: 
+    display_utc: false
 pages:
 - food-schedule/april.md
 - food-schedule/august.md
