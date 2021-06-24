@@ -17,3 +17,5 @@ fields:
       type: pages
       section: food-items
   label: Food Items
+pages:
+- food-schedule/january.md
