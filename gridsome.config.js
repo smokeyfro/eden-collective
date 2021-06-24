@@ -43,6 +43,18 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
+        path: "food-schedule/**/*.md",
+        typeName: "FoodSchedule",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
         path: "journal/**/*.md",
         typeName: "JournalPost",
         resolveAbsolutePaths: true,
