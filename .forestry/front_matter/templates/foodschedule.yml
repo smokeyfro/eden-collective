@@ -19,6 +19,7 @@ fields:
   label: Food Items
 pages:
 - food-schedule/april.md
+- food-schedule/august.md
 - food-schedule/february.md
 - food-schedule/january.md
 - food-schedule/july.md
