@@ -8,7 +8,9 @@ fields:
     required: false
   label: Title
 pages:
+- food-items/beef.md
 - food-items/carrots.md
+- food-items/chicken.md
 - food-items/garlic.md
 - food-items/pork.md
 - food-items/potatoes.md
