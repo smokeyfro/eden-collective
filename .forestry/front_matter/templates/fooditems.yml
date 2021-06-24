@@ -1,0 +1,29 @@
+---
+label: FoodItems
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+pages:
+- food-items/apples.md
+- food-items/beef.md
+- food-items/carrots.md
+- food-items/chicken.md
+- food-items/dairy.md
+- food-items/duck.md
+- food-items/garlic.md
+- food-items/grapes.md
+- food-items/onions.md
+- food-items/oranges.md
+- food-items/ostrich.md
+- food-items/peaches.md
+- food-items/pears.md
+- food-items/plums.md
+- food-items/pork.md
+- food-items/potatoes.md
+- food-items/sweet-corn.md
+- food-items/tomatoes.md
+- food-items/tumeric.md

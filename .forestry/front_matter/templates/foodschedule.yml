@@ -1,0 +1,41 @@
+---
+label: FoodSchedule
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: order
+  type: datetime
+  label: Order
+  description: ''
+  config:
+    required: false
+    date_format: MM
+    time_format: 
+    display_utc: false
+- name: food_items
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: food-items
+  label: Food Items
+pages:
+- food-schedule/april.md
+- food-schedule/august.md
+- food-schedule/december.md
+- food-schedule/february.md
+- food-schedule/january.md
+- food-schedule/july.md
+- food-schedule/june.md
+- food-schedule/march.md
+- food-schedule/may.md
+- food-schedule/november.md
+- food-schedule/october.md
+- food-schedule/september.md
