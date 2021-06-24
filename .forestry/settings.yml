@@ -41,6 +41,20 @@ sections:
   templates:
   - journal
 - type: directory
+  path: food-schedule
+  label: Food Schedule
+  create: all
+  match: "**/*"
+  templates:
+  - foodschedule
+- type: directory
+  path: food-items
+  label: Food Items
+  create: documents
+  match: "**/*"
+  templates:
+  - fooditems
+- type: directory
   path: authors
   label: Authors
   create: documents

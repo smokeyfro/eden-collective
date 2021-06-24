@@ -15,4 +15,5 @@ fields:
     max: 
     source:
       type: pages
+      section: food-items
   label: Food Items
