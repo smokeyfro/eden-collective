@@ -12,12 +12,26 @@ sections:
   templates:
   - page
 - type: directory
+  path: ''
+  label: Projects
+  create: all
+  match: "**/projects/*"
+  templates:
+  - project
+- type: directory
   path: events
   label: Events
   create: documents
   match: "**/*.md"
   templates:
   - communityevents
+- type: directory
+  path: ''
+  label: Members
+  create: documents
+  match: "**/members/*"
+  templates:
+  - member
 - type: directory
   path: journal
   label: Journal
