@@ -52,8 +52,8 @@ query FoodSchedule {
     edges {
       node {
         title
-        date (format: "MMM")
-        createdMonth: date(format: "MMMM")
+        order (format: "MMM")
+        createdMonth: order(format: "MMMM")
       }
     }
   }
