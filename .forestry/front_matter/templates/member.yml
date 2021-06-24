@@ -1,4 +1,28 @@
 ---
 label: Member
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
+- name: phone
+  type: text
+  config:
+    required: false
+  label: Phone
+- name: expertise
+  type: tag_list
+  default: []
+  label: Expertise
+- name: photo
+  type: file
+  config:
+    maxSize: 64
+  label: Photo
