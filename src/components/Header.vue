@@ -18,7 +18,9 @@
         <g-link class="nav__link" to="/contact">Contact</g-link>
         <g-link class="nav__link" to="/join">Join</g-link>
       </nav>
-      <a class="bg-black text-white font-bold ml-5 rounded-md px-4 py-2" to="/join"
+      <a
+        class="bg-black text-white font-bold ml-5 rounded-md px-4 py-2"
+        href="https://forum.edenhub.org"
         ><span class="hidden lg:inline">Community </span>Forum</a
       >
       <nav-button @openNavbarModal="openNavbarModal" v-on="$listeners" />
