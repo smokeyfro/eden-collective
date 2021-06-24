@@ -9,5 +9,6 @@ fields:
   label: Title
 pages:
 - food-items/carrots.md
+- food-items/garlic.md
 - food-items/potatoes.md
 - food-items/tomatoes.md
