@@ -12,10 +12,10 @@ sections:
   templates:
   - page
 - type: directory
-  path: ''
+  path: projects
   label: Projects
   create: all
-  match: "**/projects/*"
+  match: "**/*"
   templates:
   - project
 - type: directory
@@ -30,7 +30,7 @@ sections:
   label: Members
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - member
 - type: directory
