@@ -8,6 +8,7 @@ fields:
     required: false
   label: Title
 pages:
+- food-items/apples.md
 - food-items/beef.md
 - food-items/carrots.md
 - food-items/chicken.md
