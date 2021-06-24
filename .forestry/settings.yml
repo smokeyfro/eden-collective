@@ -26,10 +26,11 @@ sections:
   templates:
   - communityevents
 - type: directory
-  path: ''
+  path: members
   label: Members
   create: documents
-  match: "**/members/*"
+  match: "**/*"
+  new_doc_ext: ".md"
   templates:
   - member
 - type: directory
