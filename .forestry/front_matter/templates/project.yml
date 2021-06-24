@@ -17,3 +17,28 @@ fields:
       file: 
       path: 
   label: Members
+- name: objective
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Objective
+- name: status
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Planning
+    - In-Progress
+    - Complete
+    - Active
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Status
