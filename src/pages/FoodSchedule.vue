@@ -2,9 +2,15 @@
   <Layout>
     <div class="">
       <SubHero title="Food Schedule" />
-      <ul class="mt-10 prose lg:prose-xl mx-auto">
-        <li v-for="month in $page.posts.edges" :key="month.node.id">
-          <h2 class="font-bold text-2xl mb-2">{{ month.node.title }}</h2>
+      <ul class="mt-10 grid grid-cols-6 gap-8 container mx-auto">
+        <li
+          v-for="month in $page.posts.edges"
+          :key="month.node.id"
+          class="p-6 bg-gray-100 border border-gray-500 rounded-md overflow-hidden"
+        >
+          <h2 class="font-bold uppercase border-b-2 border-gray-500 text-lg pb-2 mb-2">
+            {{ month.node.title }}
+          </h2>
           <ul class="mb-10" v-if="month.node.items">
             <li
               v-for="(item, index) in month.node.items"
