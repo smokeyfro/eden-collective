@@ -36,7 +36,7 @@ export default {
 }
 .hero {
   @apply overflow-hidden w-full my-0 mx-auto bg-cover bg-center relative;
-  background-image: url(../../static/header.jpg);
+  background-image: url(../../static/login.jpg);
   background-repeat: no-repeat;
 }
 
